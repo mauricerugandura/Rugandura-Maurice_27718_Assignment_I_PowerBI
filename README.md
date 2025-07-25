@@ -210,8 +210,8 @@ data['distance_km'] = haversine(
 data['pickup_datetime'] = pd.to_datetime(data['pickup_datetime'])
 data['hour'] = data['pickup_datetime'].dt.hour  # Hour of the day (0–23)
 ```
- **Fare vs Distance**
- 
+  **Fare vs Distance**
+  
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -223,6 +223,8 @@ plt.ylabel('Fare Amount ($)')
 plt.show()
 ```
 ![fare vs distance](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/40ffbf746801725c2dfcbf7995ed3a43318b3937/farevsdist.PNG)
+
+###  Hourly Ride Trends
 
 ```python
 import matplotlib.pyplot as plt
