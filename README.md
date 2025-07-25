@@ -173,7 +173,7 @@ print("Outliers:\n", outliers)
 ```
 ![outlier](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/a855921ca8f5100f9a38e6a17239e00340b1dbb0/outlier.PNG)
 
- **Fare Distribution**
+ **Fare Amount**
  
 ```python
 import seaborn as sns
