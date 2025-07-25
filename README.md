@@ -110,15 +110,15 @@ data
 ```python
 data.isna().sum()
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
+![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/dataisna.PNG)
 
 ```python
 data.drop_duplicates
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
+![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/datadrop.PNG)
 
 ```python
 data.isnull()
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
+![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/dataisnull.PNG)
 
