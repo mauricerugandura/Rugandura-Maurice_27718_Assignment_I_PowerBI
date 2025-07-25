@@ -327,7 +327,7 @@ For any questions regarding this project, feel free to contact:
 **Rugandura Maurice**  
 
 📧 mauricerugandura123@gmail.com 
-🔗 GitHub: [[Your GitHub Link](https://github.com/mauricerugandura)]  
+🔗 GitHub: [[GitHub Link](https://github.com/mauricerugandura)]  
 
   Course: Introduction to Big Data Analytics
   
