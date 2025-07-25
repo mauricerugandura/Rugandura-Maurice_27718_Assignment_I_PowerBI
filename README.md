@@ -294,6 +294,8 @@ print(" File 'uber_enhanced.csv' saved successfully.")
 
 ### 🔹 Power BI Dashboard Preview
 
+![dashboard](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6adc6e2cdb2b2c761d32f6f6fe7fbb540d9f6f4b/dashboard.PNG)
+
 ## ✅ Conclusion
 
 This project provided valuable insights into Uber's fare trends and ride behaviors through time-based and spatial analysis. Using Python, the dataset was cleaned and enriched with additional features, and then visualized in Power BI.
