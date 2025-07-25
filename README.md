@@ -325,8 +325,10 @@ Based on the analysis, the following actions are recommended for Uber and simila
 For any questions regarding this project, feel free to contact:
 
 **Rugandura Maurice**  
+
 📧 mauricerugandura123@gmail.com 
 🔗 GitHub: [[Your GitHub Link](https://github.com/mauricerugandura)]  
 
   Course: Introduction to Big Data Analytics
+  
   Instructor: Eric Maniraguha | [LinkedIn](https://www.linkedin.com/in/ericmaniraguha/)
