@@ -173,6 +173,18 @@ print("Outliers:\n", outliers)
 ```
 ![outlier](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/a855921ca8f5100f9a38e6a17239e00340b1dbb0/outlier.PNG)
 
+ **Fare Distribution**
+ 
+```python
+data['fare_amount'] = pd.to_datetime(data['fare_amount'])  
+data['fare_amount'].value_counts().sort_index().plot(kind='line')
+plt.title('fare distrubution  ')
+plt.xlabel('fare_amount')
+plt.ylabel('pickup_datetime')
+plt.show()
+```
+![fare distribution](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/5dd10a5d8f6fde08916b93e41b8091c0b5289b3a/fare%20distribution.PNG)
+
  **Fare Amount**
  
 ```python
