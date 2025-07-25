@@ -36,6 +36,15 @@ This data was cleaned and enhanced using Python before importing into Power BI f
 
 ---
 
+##  Tools and Technologies
+
+- **Python (Pandas)** – For data cleaning and preparation  
+- **Power BI Desktop** – For data visualization and dashboard creation  
+- **GitHub** – For version control and project documentation  
+- **Dataset Source**: [Uber Fares Dataset – Kaggle](https://www.kaggle.com/datasets/yasserh/uber-fares-dataset)
+
+---
+
 ## 🧪 Methodology
 
 The analysis process followed these main steps:
@@ -54,24 +63,6 @@ The analysis process followed these main steps:
 
 4. **Dashboard Design**
    - Used filters, slicers, tooltips, and maps (where applicable)
-
----
-
-## 📁 Project Structure
-
-Uber-Fares-PowerBI/
-├── data/
-│ └── cleaned_uber_fares.csv
-├── scripts/
-│ └── data_cleaning.py
-├── dashboard/
-│ └── Uber_Fares_Dashboard.pbix
-├── screenshots/
-│ └── data_loading.png
-│ └── visuals.png
-├── README.md
-├── report/
-│ └── Uber_Fares_Report.md or .pptx
 
 ---
 
@@ -94,7 +85,7 @@ All visuals are interactive and support filtering by hour, month, day of week, a
 
 ---
 
-## 📊 Visualizations
+## 📊 EDA Visualizations
 
 ```python
 import pandas as pd
@@ -105,22 +96,22 @@ data = pd.read_csv('uber.csv')
 ```python
 data
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
+![data](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
 
 ```python
 data.isna().sum()
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/dataisna.PNG)
+![data is na](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/dataisna.PNG)
 
 ```python
 data.drop_duplicates
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/datadrop.PNG)
+![data drop](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/datadrop.PNG)
 
 ```python
 data.isnull()
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/dataisnull.PNG)
+![data is null](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6757ff9270bb30f5a1c24d0abb57e6aa77864deb/dataisnull.PNG)
 
 ```python
 data_remove = data.dropna()
@@ -129,7 +120,7 @@ data_remove = data.dropna()
 data_remove
 ```
 
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/cb936a216cde4a1e21d923348a33c0f7c831d2d5/dataremove.PNG)
+![data remove](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/cb936a216cde4a1e21d923348a33c0f7c831d2d5/dataremove.PNG)
 
 ```python
 data.dropna(inplace=True)
@@ -138,7 +129,7 @@ data.dropna(inplace=True)
 fare_amount = data['fare_amount'].mean()
 print("fare_amount:", fare_amount)
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/59d58d8ea33fe2de6a9a98610b45e8f8ba825fb6/fareamount.PNG)
+![mean](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/59d58d8ea33fe2de6a9a98610b45e8f8ba825fb6/fareamount.PNG)
 
 ```python
 data = pd.DataFrame(data)
@@ -149,25 +140,25 @@ print("mean fare_amount:", data['fare_amount'].median())
 ```python
 print("mode:", data['fare_amount'].mode())
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/e003998d47b5508c9ca83f6b2d9530a0171df702/mode.PNG)
+![mode](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/e003998d47b5508c9ca83f6b2d9530a0171df702/mode.PNG)
 
 ```python
 print("std dev of age:", data['fare_amount'].std())
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6373189725a2ef103b367d9be04fe0e1c3a5bb0d/stddev.PNG)
+![stddev](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/6373189725a2ef103b367d9be04fe0e1c3a5bb0d/stddev.PNG)
 
 ```python
 print("25th percentile (Q1):", data['fare_amount'].quantile(0.25))
 print("50th percentile (Median):", data['fare_amount'].quantile(0.5))
 print("75th percentile (Q3):", data['fare_amount'].quantile(0.75))
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/db72505765b5c1354dea48c543a9ca6000092f93/qualantile.PNG)
+![quantile](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/db72505765b5c1354dea48c543a9ca6000092f93/qualantile.PNG)
 
 ```python
 range_value = data['fare_amount'].max() - data['fare_amount'].min()
 print("Range of fare amount:", range_value)
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/14c422ca6ed746befa78842bdf50efeba8d3b8a7/rangevalue.PNG)
+![rangevalue](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/14c422ca6ed746befa78842bdf50efeba8d3b8a7/rangevalue.PNG)
 
 ```python
 Q1 = data['fare_amount'].quantile(0.25)
@@ -180,8 +171,10 @@ upper_bound = Q3 + 1.5 * IQR
 outliers = data[(data['fare_amount'] < lower_bound) | (data['fare_amount'] > upper_bound)]
 print("Outliers:\n", outliers)
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/a855921ca8f5100f9a38e6a17239e00340b1dbb0/outlier.PNG)
+![outlier](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/a855921ca8f5100f9a38e6a17239e00340b1dbb0/outlier.PNG)
 
+ **Fare Distribution**
+ 
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -190,7 +183,7 @@ sns.boxplot(x=data['fare_amount'])
 plt.show()
 ```
 
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/4b986e37aca56bf2a2012aefb2ae950e2ad62096/matplotlib.PNG)
+![matplotlib](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/4b986e37aca56bf2a2012aefb2ae950e2ad62096/matplotlib.PNG)
 
 ```python
 import numpy as np
@@ -211,12 +204,14 @@ data['distance_km'] = haversine(
     data['dropoff_latitude'], data['dropoff_longitude']
 )
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/692a777a3a42f9ad12ba829148e4253810458b04/distance.PNG)
+![distance](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/692a777a3a42f9ad12ba829148e4253810458b04/distance.PNG)
 
 ```python
 data['pickup_datetime'] = pd.to_datetime(data['pickup_datetime'])
 data['hour'] = data['pickup_datetime'].dt.hour  # Hour of the day (0–23)
 ```
+ **Fare vs Distance**
+ 
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -227,7 +222,7 @@ plt.xlabel('Distance Traveled (km)')
 plt.ylabel('Fare Amount ($)')
 plt.show()
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/40ffbf746801725c2dfcbf7995ed3a43318b3937/farevsdist.PNG)
+![fare vs distance](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/40ffbf746801725c2dfcbf7995ed3a43318b3937/farevsdist.PNG)
 
 ```python
 import matplotlib.pyplot as plt
@@ -242,12 +237,12 @@ plt.xticks(range(0, 24))
 plt.grid(True)
 plt.show()
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/181351676cac5abf171cf7a0a09248f0ba8933e9/average%20fare.PNG)
+![average fareamount](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/181351676cac5abf171cf7a0a09248f0ba8933e9/average%20fare.PNG)
 
 ```python
 print(data[['fare_amount', 'distance_km', 'passenger_count']].corr())
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/acf81bde8ef39864599501552df87e10b51b02fe/corr.PNG)
+![corr](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/acf81bde8ef39864599501552df87e10b51b02fe/corr.PNG)
 
 ```python
 data['pickup_datetime'] = pd.to_datetime(data['pickup_datetime'])
@@ -257,7 +252,7 @@ data['month'] = data['pickup_datetime'].dt.month
 data['day_of_week'] = data['pickup_datetime'].dt.day_name()
 print(data[['pickup_datetime', 'hour', 'day', 'month', 'day_of_week']].head())
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/acf81bde8ef39864599501552df87e10b51b02fe/pickup.PNG)
+![pickup](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/acf81bde8ef39864599501552df87e10b51b02fe/pickup.PNG)
 
 ```python
 def peak_status(hour):
@@ -268,7 +263,7 @@ def peak_status(hour):
 data['peak_status'] = data['hour'].apply(peak_status)
 print(data[['hour', 'peak_status']].head(10))
 ```
-[![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/842140f4c351c36a268bf5f32b462553a2c7edd9/peakstatus.PNG)
+![peakstatus](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/842140f4c351c36a268bf5f32b462553a2c7edd9/peakstatus.PNG)
 
 ```python
 data['day_of_week'] = pd.Categorical(data['day_of_week'],
@@ -279,6 +274,13 @@ data['day_of_week'] = pd.Categorical(data['day_of_week'],
 data.to_csv('uber_enhanced.csv', index=False)
 print(" File 'uber_enhanced.csv' saved successfully.")
 ```
-![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/842140f4c351c36a268bf5f32b462553a2c7edd9/successful.PNG)
+![message successful](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/842140f4c351c36a268bf5f32b462553a2c7edd9/successful.PNG)
 
 ---
+##  Author
+
+**RUGANDURA MAURICE**  
+student at AUCA 
+  Email: [mauricerugandura123@gmail.com]  
+  Course: Introduction to Big Data Analytics
+  Instructor: Eric Maniraguha | [LinkedIn](https://www.linkedin.com/in/ericmaniraguha/)
