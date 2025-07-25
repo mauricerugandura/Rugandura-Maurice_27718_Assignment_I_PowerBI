@@ -282,10 +282,37 @@ print(" File 'uber_enhanced.csv' saved successfully.")
 
 ### 🔹 Power BI Dashboard Preview
 
-##  Author
+## ✅ Conclusion
 
-**RUGANDURA MAURICE**  
-student at AUCA 
-  Email: [mauricerugandura123@gmail.com]  
+This project provided valuable insights into Uber's fare trends and ride behaviors through time-based and spatial analysis. Using Python, the dataset was cleaned and enriched with additional features, and then visualized in Power BI.
+
+Key findings include:
+- Peak hours with higher fare averages (7–9 AM and 4–7 PM)
+- Most rides occurring on weekdays, especially Fridays and Mondays
+- Fare amounts are heavily concentrated under $20
+- Monthly trends reveal potential seasonality in ride demand
+
+These insights highlight how ride-hailing services like Uber can optimize operations, adjust pricing strategies, and better plan for high-demand periods.
+
+The interactive Power BI dashboard enables dynamic exploration of these patterns and supports future business decisions with data-driven evidence.
+
+
+## 💡 Recommendations
+
+Based on the analysis, the following actions are recommended for Uber and similar services:
+
+- Optimize driver allocation during peak hours and weekdays.
+- Consider adjusting fare pricing dynamically based on seasonal and hourly demand.
+- Use geographic data to identify high-demand pickup areas for better coverage.
+- Incorporate external data (e.g., weather, traffic) for deeper insights in future analyses.
+
+## 📫 Contact
+
+For any questions regarding this project, feel free to contact:
+
+**Rugandura Maurice**  
+📧 mauricerugandura123@gmail.com 
+🔗 GitHub: [[Your GitHub Link](https://github.com/mauricerugandura)]  
+
   Course: Introduction to Big Data Analytics
   Instructor: Eric Maniraguha | [LinkedIn](https://www.linkedin.com/in/ericmaniraguha/)
