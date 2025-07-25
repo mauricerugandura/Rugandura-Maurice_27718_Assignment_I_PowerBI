@@ -23,4 +23,82 @@ The final dashboard and report offer actionable insights that could support oper
  
 ---
 
-*This README is part of a broader submission for Assignment I: Uber Fares Dataset Analysis using Power BI.*
+## 📊 Dataset Description
+
+The dataset used for this project is the **Uber Fares Dataset** from Kaggle. It contains trip-level information including:
+
+- `pickup_datetime` – Timestamp of when the ride started
+- `fare_amount` – Final fare in USD
+- `pickup_latitude`, `pickup_longitude` – Coordinates of the pickup point
+- Additional features (engineered): `hour`, `day_of_week`, `month`, `peak_offpeak`, `fare_bin`
+
+This data was cleaned and enhanced using Python before importing into Power BI for visualization.
+
+---
+
+## 🧪 Methodology
+
+The analysis process followed these main steps:
+
+1. **Data Cleaning** using Python (Pandas)
+   - Removed missing and invalid records
+   - Converted timestamps to datetime format
+   - Extracted hour, day, and month from datetime
+   - Created fare bins and peak/off-peak indicators
+
+2. **Feature Engineering**
+   - Added new columns to enable time-based and categorical analysis
+
+3. **Data Visualization in Power BI**
+   - Created interactive visuals to explore fare distribution, time patterns, and ride volumes
+
+4. **Dashboard Design**
+   - Used filters, slicers, tooltips, and maps (where applicable)
+
+---
+
+## 📁 Project Structure
+
+Uber-Fares-PowerBI/
+├── data/
+│ └── cleaned_uber_fares.csv
+├── scripts/
+│ └── data_cleaning.py
+├── dashboard/
+│ └── Uber_Fares_Dashboard.pbix
+├── screenshots/
+│ └── data_loading.png
+│ └── visuals.png
+├── README.md
+├── report/
+│ └── Uber_Fares_Report.md or .pptx
+
+---
+
+
+---
+
+### 5. ✅ **Visualizations**
+
+```markdown
+## 📊 Visualizations
+
+The Power BI dashboard includes:
+
+- Fare Distribution (histogram/fare bins)
+- Average Fare by Hour of Day
+- Ride Volume by Day of Week
+- Fare Trend by Month
+- Peak vs Off-Peak Ride Comparison
+- Geographic Ride Heatmap (if coordinates available)
+
+All visuals are interactive and support filtering by hour, month, day of week, and peak/off-peak.
+```
+
+---
+
+
+
+
+
+
