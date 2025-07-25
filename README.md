@@ -85,7 +85,7 @@ All visuals are interactive and support filtering by hour, month, day of week, a
 
 ---
 
-## 📊 EDA Visualizations
+### 🔹 EDA Visualization Samples
 
 ```python
 import pandas as pd
@@ -279,6 +279,9 @@ print(" File 'uber_enhanced.csv' saved successfully.")
 ![message successful](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/842140f4c351c36a268bf5f32b462553a2c7edd9/successful.PNG)
 
 ---
+
+### 🔹 Power BI Dashboard Preview
+
 ##  Author
 
 **RUGANDURA MAURICE**  
