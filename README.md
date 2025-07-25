@@ -75,9 +75,6 @@ Uber-Fares-PowerBI/
 
 ---
 
-
----
-
 ### 5. ✅ **Visualizations**
 
 ```markdown
@@ -97,8 +94,31 @@ All visuals are interactive and support filtering by hour, month, day of week, a
 
 ---
 
+## 📊 Visualizations
 
+```python
+import pandas as pd
+```
+```python
+data = pd.read_csv('uber.csv')
+```
+```python
+data
+```
+![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
 
+```python
+data.isna().sum()
+```
+![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
 
+```python
+data.drop_duplicates
+```
+![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
 
+```python
+data.isnull()
+```
+![Logical Data Model](https://github.com/mauricerugandura/Rugandura_Maurice_Assignment_I_PowerBI/blob/1d92ddb4328906eef3de0e9da99112ea3a18df0c/data.PNG)
 
